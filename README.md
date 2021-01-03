@@ -14,7 +14,7 @@ install dependencies:
 npm install
 ```
 
-start dev mode:
+start dev environment:
 ```shell
 gatsby develop
 ```
@@ -24,5 +24,5 @@ when ready, build:
 gatsby build
 ```
 
-copy public folder to server using an ftp client
+copy public folder to server using an ftp client.
 
