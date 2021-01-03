@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    background-color: lightblue;
+    flex-wrap: wrap;
+}
+
+.oneCol{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: black solid 1px;
+    margin: 1rem;
+    min-width: 100%;
+    
+}
+
+.twoCol{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: black solid 1px;
+    margin: 1rem;
+
+}
+
+.threeCol{
+
+}

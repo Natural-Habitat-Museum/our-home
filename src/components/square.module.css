@@ -1,0 +1,180 @@
+.squareOne {
+    grid-column-end: span 6;
+    position: relative;
+    display: flex;
+    padding-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+}
+
+.squareTwo {
+    grid-column-end: span 3;
+    position: relative;
+    display: flex;
+    padding-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    overflow: hidden;
+}
+
+.squareThree {
+    grid-column-end: span 2;
+    position: relative;
+    display: flex;
+    padding-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 14em;
+    border: black solid 1px;
+}
+
+.pseudo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+}
+
+.pseudo h1 {
+    font-size: 5vw;
+    line-height: 7vw;
+}
+
+.pseudo h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.pseudo h3 {
+    font-size: 2vw;
+    margin: 0;
+    letter-spacing: 2vw;
+    text-indent:2vw;
+}
+
+.pseudo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.pseudo a div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pseudo a h2 {
+    text-decoration: none;
+    position: relative;
+    width: auto;
+    flex: 0 1 0;
+    margin: 0.3rem;
+}
+
+/* .pseudo a h2:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+} */
+
+.pseudo a h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    transition: ease-in-out 0.4s;
+}
+
+.pseudo a:hover h2:nth-child(1):before {
+    animation-name: link-mouse-over;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.pseudo a:hover h2:nth-child(2):before {
+    animation-name: link-mouse-over;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: 100ms;
+}
+
+.pseudo a:hover h2:nth-child(3):before {
+    animation-name: link-mouse-over;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: 200ms;
+
+}
+
+.pseudoImage {
+    position: absolute;
+    width: 100.5%;
+    height: 0%;
+    left: 0%;
+    top: 0px;
+}
+
+@keyframes link-mouse-over {
+    from {
+            width: 100%;
+    }
+    to {
+        width: 2%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .squareTwo, .squareThree {
+        grid-column-end: span 6;
+    }
+    .pseudo h1 {
+        margin-top: -2vw;
+        font-size: 12vw;
+        line-height: 18vw;
+    }
+    .pseudo h2 {
+        font-size: 8vw;
+    }
+    .pseudo h3 {
+        margin-top: 2   vw;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .pseudo h1 {
+        font-size: 60px;
+        line-height: 84px;
+    }    
+    .pseudo h2 {
+        font-size: 24px;
+    }
+    .pseudo h3 {
+        font-size: 24px;
+        letter-spacing: 24px;
+        
+    }
+}
