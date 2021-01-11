@@ -43,8 +43,7 @@ const AboutPage = () => (
           <h2 className={gridStyles.gridEl}>exhibitions</h2>
           <div className={gridStyles.gridElMargin}>
             <p>
-              <strong>#StayHomeGoViral</strong> <br />19.03.2020 – ongoing
-  <br /><a href="https://www.natural-habitat.com/exhibition/index.php">Visit the exhibition</a>
+              <strong>#StayHomeGoViral</strong> <br />19.03.2020 – 31.10.2020
               <br /><br />
 
               <strong>But is it art?</strong> <br />17.07.2019 – 17.01.2020
